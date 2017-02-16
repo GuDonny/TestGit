@@ -19,7 +19,7 @@ public class ImageToBinary {
 
 
     public static void main(String[] args) {
-        createThumbnail("C:\\Users\\SkyTech\\Desktop\\1.jpeg", "C:\\Users\\SkyTech\\Desktop\\2.jpeg", 5,5);
+        createThumbnail("C:\\Users\\SkyTech\\Desktop\\1.jpeg", "C:\\Users\\SkyTech\\Desktop\\2.jpeg", 5, 5);
 
         // System.out.println(getImageBinary());
         base64StringToImage(getImageBinary());
