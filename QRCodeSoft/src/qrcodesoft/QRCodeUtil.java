@@ -53,21 +53,12 @@ public class QRCodeUtil {
                 "ORG:南京擎天科技有限公司\n" +
                 "ADR;WORK;POSTAL:江苏省南京市浦口区天浦路26号\n" +
                 "NOTE:擎天科技 竭诚为您服务\n" +
-                "PHOTO;JPEG;ENCODING=BASE64:[/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a" +
-                "HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy" +
-                "MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAFAAUDASIA" +
-                "AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA" +
-                "AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3" +
-                "ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm" +
-                "p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA" +
-                "AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx" +
-                "BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK" +
-                "U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3" +
-                "uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDivFer" +
-                "Mg0t0jdA9ouQkpGSOMn3PtiiiirIP//Z]" +
                 "END:VCARD";
         // 生成二维码
-        QRCodeUtil.encode(VCARD, "C:\\Users\\SkyTech\\Desktop\\1.jpeg", "E:/顾栋二维码名片.png", true);
+        QRCodeUtil.encodeNoLogo(VCARD,  "E:/顾栋二维码png", true);
+        // WIFI:T:加密方式;S:ssid;P:密码;
+        String wifi = "WIFI:T:WPA/WPA2 PSK;S:Donny;P:1792998761;";
+        //QRCodeUtil.encodeNoLogo(wifi, "E:/顾栋二维码.png", true);
         // 解析二维码
 //        System.out.println(QRCodeUtil.decode(new File("E:\\6578001.jpg")));
 //        System.out.println(QRCodeUtil.decode("E:\\1212.png"));
