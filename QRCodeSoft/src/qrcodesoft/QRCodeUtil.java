@@ -40,7 +40,7 @@ public class QRCodeUtil {
     // LOGO高度
     private static final int HEIGHT = 60;
 
-    // 直接编辑--测试
+    // 直接编辑--测试-
     public static void main(String[] args) throws Exception {
         // 手机二维码名片信息
         String VCARD = "BEGIN:VCARD\n" +
