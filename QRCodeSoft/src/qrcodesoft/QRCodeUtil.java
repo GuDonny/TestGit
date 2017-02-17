@@ -55,10 +55,10 @@ public class QRCodeUtil {
                 "NOTE:擎天科技 竭诚为您服务\n" +
                 "END:VCARD";
         // 生成二维码
-        QRCodeUtil.encodeNoLogo(VCARD,  "E:/顾栋二维码png", true);
+        QRCodeUtil.encode(VCARD, "C:\\Users\\SkyTech\\Desktop\\1.jpeg", "E:/顾栋二维码png", true);
         // WIFI:T:加密方式;S:ssid;P:密码;
         String wifi = "WIFI:T:WPA/WPA2 PSK;S:Donny;P:1792998761;";
-        //QRCodeUtil.encodeNoLogo(wifi, "E:/顾栋二维码.png", true);
+        QRCodeUtil.encodeNoLogo(wifi, "E:/顾栋二维码.png", true);
         // 解析二维码
 //        System.out.println(QRCodeUtil.decode(new File("E:\\6578001.jpg")));
 //        System.out.println(QRCodeUtil.decode("E:\\1212.png"));
